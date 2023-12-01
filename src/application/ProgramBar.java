@@ -10,10 +10,10 @@ public class ProgramBar {
 	public static void main(String[] args) {
 
 		Locale.setDefault(Locale.US);
+		
 		Scanner sc = new Scanner(System.in);
 		
-		Bill bill = new Bill();
-		
+		Bill bill = new Bill();		
 		
 		System.out.println("Sexo: ");
 		bill.gender = sc.next().charAt(0);
@@ -40,8 +40,12 @@ public class ProgramBar {
 		System.out.printf("Ingresso= %.2f%n", bill.ticket());
 		
 		System.out.println();
+		System.out.println();
+		System.out.println();
 		
 		System.out.printf("Valor a pagar= %.2f%n", bill.total());
+		
+		System.out.printf("FIM");
 		
 		sc.close();
 			
